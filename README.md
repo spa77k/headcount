@@ -8,6 +8,24 @@ Deploying a game server or a voice bot while people are using it drops them mid-
 
 Works with Claude Code, Codex, Antigravity (`agy`) and any agent that supports the [Agent Skills](https://agentskills.io) `SKILL.md` format.
 
+## Why use it
+
+- **No more "is anyone on?" before every deploy.** The agent asks the server itself, with a real query, instead of you opening a player list or a voice channel.
+- **Deploy without waiting around.** Say "when nobody is on" and go do something else. It counts in the background and deploys the moment the service is empty.
+- **Schedule it and sleep.** "Apply it at 22:20, restart is OK" waits, counts shortly before, and if people are still on, announces and drains them first.
+- **A broken check never turns into "empty".** If the count fails, it stops. It does not assume 0.
+- **You get proof.** The report says how many people were connected at the moment of deploy and how they were counted, and that your data survived.
+
+## Where it pays off
+
+- **Minecraft server.** Update plugins or config without kicking someone mid-build, with a save before any restart.
+- **Discord voice / TTS / music bot.** Ship a new version without cutting off a call.
+- **Terraria, Rust, ARK, CS2 and other game servers.** Restart for a patch when the server is empty, not in the middle of a raid.
+- **WebSocket / chat / realtime apps.** Roll out when no sockets are open.
+- **Self-hosted web apps.** Pick a quiet moment from the access log or session table.
+
+Not for services nobody stays connected to (static sites, serverless functions). There is nothing to count.
+
 ## What it does
 
 1. Applies the change without a restart when a reload is enough.
