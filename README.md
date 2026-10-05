@@ -1,6 +1,6 @@
 # headcount
 
-**English** | [日本語](README.ja.md)
+**English** | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)
 
 An agent skill that counts who is connected before it deploys.
 

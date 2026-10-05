@@ -1,6 +1,6 @@
 # headcount
 
-[English](README.md) | **日本語**
+[English](README.md) | **日本語** | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)
 
 反映する前に、いまつながっている人を数えるエージェント用スキルです。
 
